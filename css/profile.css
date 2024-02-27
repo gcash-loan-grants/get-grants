@@ -1,0 +1,312 @@
+.elementor-profile-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.flex-element-one, .flex-element-two {
+    width: 100%;
+}
+.elementor-img {
+    width: 60px;
+    height: 60px;
+}
+.elementor-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.elementor-info {
+    margin-left: 10px;
+}
+.elementor-number {
+    font-size: 16px;
+    color: var(--white);
+}
+.elementor-id {
+    font-size: 13px;
+    color: yellow;
+}
+.elementor-loan-panel {
+    padding: 10px ;
+    background-color: #f1f1f2;
+    border-radius: 5px;
+}
+.elementor-grid-share {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.elementor-loan-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+}
+.elementor-loan-title {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--light-black);
+    margin-top: 2px;
+}
+.elementor-loan-value-low {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.for-gcash-loan-offers {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    color: var(--white);
+    margin: 10px 0 0 0;
+}
+.elementor-loan-details-box {
+    width: 100%;
+    padding: 10px 5%;
+    background-color: var(--white);
+    margin-left: auto;
+    margin-right: auto;
+}
+.loan-amount-title {
+    font-size: 13px;
+    color: var(--black);
+    font-weight: 400;
+}
+.thick-range-line {
+    width: 100%;
+    border-top: 4px solid rgb(204, 204, 204);
+    margin: 5px 0;
+}
+input#loan-amount, input#loan-repayment {
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    outline: none;
+    color: var(--light-black);
+    background-color: transparent;
+}
+input#loan-amount:focus, input#loan-repayment:focus {
+    outline: none;
+}
+.error-msg {
+    color: rgb(211, 4, 4);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+::placeholder {
+    font-size: 12px;
+    font-family: var(--oswald);
+    color: var(--light-black);
+    opacity: 0.4;
+}
+.loan-offer-range {
+    font-size: 11px;
+    font-family: var(--oswald);
+    font-weight: 600;
+    color: var(--light-black);
+}
+.loan-offer-range-para {
+    font-size: 10px;
+    font-weight: 400;
+    color: green;
+}
+
+.input-submit-buttons {
+    width: 240px;
+    height: 40px;
+    background-color: rgb(19, 189, 245);
+    border-radius: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.submit-button {
+    font-size: 18px;
+    color: var(--white);
+    width: 100%;
+    height: 100%;
+}   
+ .elementor-help-center {
+    color: var(--white);
+ }
+ .elementor-help-center a {
+    color: var(--white);
+ }
+ .elementor-pv5 {
+    font-size: 10px;
+    color: var(--white);
+    opacity: 0.6;
+ }
+ .spinner-button {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    margin: 5px 0;
+    border: none;
+    color: var(--white);
+    background-color: var(--pinky);
+  }
+  .spin-div {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid rgb(19, 189, 245);
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  .elementor-congrat-box {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-color: transparent;
+ }
+ .elementor-congrat-box-child {
+    position: fixed;
+    width: 300px;
+    height: 220px;
+    top: calc((100vh / 2) - 110px);
+    left: calc((100vw / 2) - 150px);
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+ }
+ .icon-div {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: green;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+}
+ .icon-div i {
+    font-size: 35px;
+    line-height: 50px;
+    color: var(--white);
+}
+.congrat-h5 {
+    font-size: 16px;
+    color: var(--black);
+}
+.congrat-p {
+    font-size: 13px;
+    color: var(--light-black);
+}
+.elementor-chat-now-button {
+    font-size: 16px;
+    padding: 5px 30px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+.elementor-chat-now-button:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* .header {
+    width: 100%;
+    padding: 20px 5%;
+}
+.home-section {
+    padding: 0 0 10px 0;
+ }
+
+.main {
+    width: 100%;
+    padding: 0 5%;
+}
+
+
+
+
+
+
+
+
+
+
+.input-submit-div {
+    background-color: rgb(19, 189, 245);
+}
+.submit-button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 80px;
+    color: var(--white);
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.input-submit-div {
+    width: 240px;
+    height: 40px;
+    background-color: rgb(19, 189, 245);
+    border-radius: 30px;
+  }
+  .spinner-button {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    margin: 5px 0;
+    border: none;
+    color: var(--white);
+    background-color: var(--pinky);
+  }
+  .spin-div {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid rgb(19, 189, 245);
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+.elementor-help-center {
+    color: var(--white);
+ }
+ .elementor-help-center a {
+    color: var(--white);
+ }
+ .elementor-pv5 {
+    font-size: 10px;
+    color: var(--white);
+    opacity: 0.6;
+ } */
