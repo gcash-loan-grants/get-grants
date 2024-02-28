@@ -23,6 +23,7 @@
   }
   body {
     width: 100%;
+    height: 100vh;
     font-family: var(--exo2);
   }
   body, select, input, textarea {
