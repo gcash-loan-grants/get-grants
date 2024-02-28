@@ -1,0 +1,46 @@
+.gchash-heading, .gchash-footer {
+    font-size: 10px;
+    color: var(--primary-color);
+}
+header {
+    width: 100%;
+}
+main {
+    width: 100%;
+}
+footer {
+    width: 100%;
+}
+.elementor-gcash-grand-box {
+    width: 225px;
+    height: max-content;
+    margin: 0 auto;
+}
+.elementor-gcash-image-logo {
+    width: 225px;
+    height: 225px;
+    margin: 0 auto;
+}
+.elementor-gcash-home-image {
+    width: 225px;
+    height: 225px;
+}
+.spin-div-container {
+    padding: 20px 0;
+}
+.spin-div {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    border-top: 4px solid var(--white);
+    border-right: 4px solid var(--white);
+    border-bottom: 4px solid var(--white);
+    border-left: 4px solid var(--primary-color);
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+} 

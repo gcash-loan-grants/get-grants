@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  :root {
+    --primary-color: #297bfa;
+    --white: #fff;
+    --black: #000;
+    --light-black: #2c2c2c;
+    --exo2: 'Exo 2';
+    --rubik:'Rubik';
+    --helvetica: monospace;
+    --arial: Arial, Helvetica, sans-serif;
+    --oswald: 'Oswald', Helvetica, sans-serif;
+    --brown: rgb(135, 15, 15);
+    --lightyellow: rgb(123, 26, 26);
+    --bg-setup: rgb(221, 221, 131);
+    --line: rgba(255, 255, 255, 0.4);
+    --box-shadow: 1px 1px 5px 0 #85888C;
+    --box-shadow2: 0 0 20px 3px rgba(0 0 0 / 5%);
+
+  }
+  body {
+    width: 100%;
+    font-family: var(--exo2);
+  }
+  body, select, input, textarea {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+  }
+  .body {
+    background-color: var(--primary-color);
+  }
+  header, footer, nav, main {
+    width: 100%;
+  }
+  .home-section {
+    width: 100%;
+    padding: 0 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-column-space-between {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+  .general-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  .elementor-inner-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 0 10px 0;
+    overflow: hidden;
+  }
+  button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  .hide-display {
+    display: none;
+  }
+  .elementor-center-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .elementor-mtop5 {
+    margin-top: 5px;
+  }
+  .elementor-mtop10 {
+    margin-top: 10px;
+  }
+  .elementor-mtop20 {
+    margin-top: 20px;
+  }
+  .elementor-mtop30 {
+    margin-top: 30px;
+  }
+  .elementor-mtop40 {
+    margin-top: 40px;
+  }
+  .elementor-text-align {
+    text-align: center;
+  }
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    display: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+  @media only screen and (min-width: 1501px) {
+    .general-container {
+      width: 1500px;
+      border-left: 5px solid var(--white);
+      border-right: 5px solid var(--white);
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (min-width: 569px) {
+    .home-section {
+      width: 512px;
+      padding: 0 20px;
+    }
+    .elementor-loan-details-box {
+      width: 512px;
+    }
+  }
+  
+   /* Exo 2 */
+    @font-face {
+      font-family: 'Exo 2';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Exo2-Regular.woff2'), local('Exo2-Regular.woff'),
+      url("./exo2/woff2/Exo2-Regular.woff2") format('woff2'),
+      url("./exo2/woff/Exo2-Regular.woff") format('woff');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: 'Exo 2';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: local('Exo2-Medium.woff2'), local('Exo2-Medium.woff'),
+      url("./exo2/woff2/Exo2-Medium.woff2") format('woff2'),
+      url("./exo2/woff/Exo2-Medium.woff") format('woff');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: 'Exo 2';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: local('Exo2-SemiBold.woff2'), local('Exo2-SemiBold.woff'),
+      url("./exo2/woff2/Exo2-SemiBold.woff2") format('woff2'),
+      url("./exo2/woff/Exo2-SemiBold.woff") format('woff');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: 'Exo 2';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local('Exo2-Bold.woff2'), local('Exo2-Bold.woff'),
+      url("./exo2/woff2/Exo2-Bold.woff2") format('woff2'),
+      url("./exo2/woff/Exo2-Bold.woff") format('woff');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: 'Exo 2';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: local('Exo2-ExtraBold.woff2'), local('Exo2-ExtraBold.woff'),
+      url("./exo2/woff2/Exo2-ExtraBold.woff2") format('woff2'),
+      url("./exo2/woff/Exo2-ExtraBold.woff") format('woff');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: 'Exo 2';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: local('Exo2-Black.woff2'), local('Exo2-Black.woff2'),
+      url("./exo2/woff2/Exo2-Black.woff2") format('woff2'),
+      url("./exo2/woff/Exo2-Black.woff") format('woff');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  
+  /* OSWALD */
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Oswald-Regular.woff2'), local('Oswald-Regular.woff'),
+    url("./oswald/wolf2/Oswald-Regular.woff2") format('woff2'),
+    url("./oswald/wolf/Oswald-Regular.woff") format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Oswald-Medium.woff2'), local('Oswald-Medium.woff'),
+    url("./oswald/wolf2/Oswald-Medium.woff2") format('woff2'),
+    url("./oswald/wolf/Oswald-Medium.woff") format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local('Oswald-SemiBold.woff2'), local('Oswald-SemiBoldwoff'),
+    url("./oswald/wolf2/Oswald-SemiBold.woff2") format('woff2'),
+    url("./oswald/wolf/Oswald-SemiBold.woff") format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Oswald-Bold.woff2'), local('Oswald-Bold.woff'),
+    url("./oswald/wolf2/Oswald-Bold.woff2") format('woff2'),
+    url("./oswald/wolf/Oswald-Bold.woff") format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+       /* Rubik */
+       @font-face {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Rubik-Regular.woff2'), local('Rubik-Regular.woff'),
+        url("./rubik/woff2/Rubik-Regular.woff2") format('woff2'),
+        url("./rubik/woff/Rubik-Regular.woff") format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: local('Rubik-Medium.woff2'), local('Rubik-Medium.woff'),
+        url("./rubik/woff2/Rubik-Medium.woff2") format('woff2'),
+        url("./rubik/woff/Rubik-Medium.woff") format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('Rubik-SemiBold.woff2'), local('Rubik-SemiBold.woff'),
+        url("./rubik/woff2/Rubik-SemiBold.woff2") format('woff2'),
+        url("./rubik/woff/Rubik-SemiBold.woff") format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('Rubik-Bold.woff2'), local('Rubik-Bold.woff'),
+        url("./rubik/woff2/Rubik-Bold.woff2") format('woff2'),
+        url("./rubik/woff/Rubik-Bold.woff") format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: local('Rubik-ExtraBold.woff2'), local('Rubik-ExtraBold.woff'),
+        url("./rubik/woff2/Rubik-ExtraBold.woff2") format('woff2'),
+        url("./rubik/woff/Rubik-ExtraBold.woff") format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: local('Rubik-Bold.woff2'), local('Rubik-Bold.woff'),
+        url("./rubik/woff2/Rubik-Black.woff2") format('woff2'),
+        url("./rubik/woff/Rubik-Black.woff") format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    
