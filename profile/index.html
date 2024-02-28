@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - profile</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <meta name="title" content="Gcash Account Profile | &amp; Your Acount Details">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="description" content="&quot; Track Your loan facility and balance">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Loan Account Balance | Track your history and record">
+    <meta property="og:url" content="https://gcash-loan-grants.github.io/get-grants/profile/">
+    <meta property="og:site_name" content="With ourr loan offers, your business is about to get better">
+    <meta property="og:image" content="https://gcash-loan-grants.github.io/get-grants/images/gcash-logo/gcash-1920by1920.jpg">
+
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/general-container.css">
+    <link rel="stylesheet" href="../css/fontawesome/free/css/fontawesome.css">
+    <link rel="stylesheet" href="../css/fontawesome/free/css/brands.css">
+    <link rel="stylesheet" href="../css/fontawesome/free/css/regular.css">
+    <link rel="stylesheet" href="../css/fontawesome/free/css/solid.css">
+    <script src="../javascript/profile.js" defer></script>
+</head>
+<body class="body">
+    <div class="general-container">
+        <div class="elementor-inner-wrap flex-column-space-between">
+            <div class="flex-element-one">
+                <header>
+                    <div class="home-section elementor-mtop40">
+                        <div class="elementor-profile-info">
+                            <div class="elementor-img">
+                                <img src="../images/gcash-logo/cartoon.webp" alt="Profile image">
+                            </div>
+                            <div class="elementor-info">
+                                <h2 id="elementor-number" class="elementor-number"></h2>
+                                <p id="elementor-id" class="elementor-id elementor-mtop5"></p>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="home-section elementor-mtop10">
+                    <div class="elementor-loan-panel">
+                        <div class="elementor-grid-share">
+                            <div class="elementor-wallet-item elementor-text-align">
+                                <h2 id="active-loan" class="elementor-loan-value">0</h2>
+                                <p class="elementor-loan-title">Active Loan</p>
+                            </div>
+                            <div class="elementor-wallet-item elementor-text-align">
+                                <h2 id="savings" class="elementor-loan-value">0</h2>
+                                <p class="elementor-loan-title">Savings</p>
+                            </div>
+                            <div class="elementor-wallet-item elementor-text-align">
+                                <h2 class="elementor-loan-value">&#8369;<span>30000</span></h2>
+                                <p class="elementor-loan-title">Eligible offer</p>
+                            </div>
+                        </div>
+                        <div class="elementor-grid-share elementor-mtop10">
+                            <div class="elementor-wallet-item elementor-text-align">
+                                <h2 id="disbursement" class="elementor-loan-value">0</h2>
+                                <p class="elementor-loan-title">Disbursement</p>
+                            </div>
+                            <div class="elementor-wallet-item elementor-text-align">
+                                <h2 id="repayment" class="elementor-loan-value">0</h2>
+                                <p class="elementor-loan-title">Repayment</p>
+                            </div>
+                            <div class="elementor-wallet-item elementor-text-align">
+                                <h2 id="discount" class="elementor-loan-value">0</h2>
+                                <p class="elementor-loan-title">Discount</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-loan-panel elementor-mtop5">
+                        <div class="elementor-grid-share elementormtop10">
+                            <div class="elementor-wallet-item elementor-text-align">
+                                <h2 class="elementor-loan-value-low">5%</h2>
+                                <p class="elementor-loan-title">Interest rate</p>
+                            </div>
+                            <div class="elementor-wallet-item elementor-text-align">
+                                <h2 class="elementor-loan-value-low">0</h2>
+                                <p class="elementor-loan-title">Wallet Balance</p>
+                            </div>
+                            <div class="elementor-wallet-item elementor-text-align">
+                                <h2 class="elementor-loan-value-low">0</h2>
+                                <p class="elementor-loan-title">Referal coins</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="for-gcash-loan-offers">Get Gcash loan, select amount below and chat with our agent for quick approval!</p>
+                </div>
+                <div class="elementor-loan-details-box elementor-mtop10">
+                    <p class="loan-amount-title">Loan Amount &nbsp;&nbsp;<span id="error-msg" class="error-msg"></span></p>
+                    <label for="loan-amount" aria-label="Loan Amount"></label>
+                    <input type="number" name="loan-amount" onfocus="clearError();" oninput="calculateInput();" class="loan-amount elementor-mtop5" id="loan-amount" onkeypress="if(this.value.length == 5) return false;" min="0" max="30000" pattern="[0-9]">     
+                    <div class="thick-range-line"></div>
+                    <div class="min-max-amounts elementor-mtop5 flex">
+                        <div>
+                            <h6 class="loan-offer-range">&#8369;0.00</h6>
+                            <p class="loan-offer-range-para">minimum</p>
+                        </div>
+                        <div>
+                            <h6 class="loan-offer-range">&#8369;30000.00</h6>
+                            <p class="loan-offer-range-para">maximum</p>
+                        </div>
+                    </div>
+                    <p class="loan-amount-title elementor-mtop10">Repayment period (days)</p>
+                    <label for="loan-repayment" aria-label="Loan Repayment"></label>
+                    <input type="text" value="90 days" name="loan-repayment" id="loan-repayment" class="loan-repayment elementor-mtop5" id="loan-repayment" min="30" max="90" readonly>   
+                </div>
+            </div>
+
+            <div class="flex-element-two">
+                <div class="input-submit-buttons elementor-center-flex">
+                    <button type="button" onclick="validateForm();" class="submit-button">Apply now</button>
+                    <button type="button" class="spinner-button hide-display">
+                        <div class="spin-div"></div>Please wait..
+                    </button>
+                </div>
+                <footer class="elementor-mtop30 elementor-text-align">
+                    <h6 class="elementor-help-center"><a href="https://www.facebook.com/profile.php?id=61556697209610">Help Center</a></h6>
+                    <p class="elementor-mtop10 elementor-pv5">v5.73.1:865</p>
+                </footer>
+            </div>
+
+            <div class="elementor-congrat-box hide-display">
+                <div class="elementor-congrat-box-child flex-column-space-between">
+                    <div class="elementor-text-align">
+                        <div class="icon-div">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h5 class="congrat-h5 elementor-mtop5">Congratulations</h5>
+                        <p class="congrat-p elementor-mtop10">Your loan application is under review.</p>
+                        <p class="congrat-p">Chat with our company agent for complete registration and final approval.</p>
+                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=61556697209610" class="elementor-chat-now-button elementor-mtop10">Chat Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
